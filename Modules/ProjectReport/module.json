@@ -1,0 +1,13 @@
+{
+    "name": "ProjectReport",
+    "alias": "projectreport",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ProjectReport\\Providers\\ProjectReportServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

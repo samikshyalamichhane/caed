@@ -1,0 +1,13 @@
+{
+    "name": "Aboutus",
+    "alias": "aboutus",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Aboutus\\Providers\\AboutusServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

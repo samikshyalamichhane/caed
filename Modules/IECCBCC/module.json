@@ -1,0 +1,13 @@
+{
+    "name": "IECCBCC",
+    "alias": "ieccbcc",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\IECCBCC\\Providers\\IECCBCCServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

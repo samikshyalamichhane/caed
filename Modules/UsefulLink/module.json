@@ -1,0 +1,13 @@
+{
+    "name": "UsefulLink",
+    "alias": "usefullink",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\UsefulLink\\Providers\\UsefulLinkServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

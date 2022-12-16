@@ -1,0 +1,13 @@
+{
+    "name": "FundingPartner",
+    "alias": "fundingpartner",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\FundingPartner\\Providers\\FundingPartnerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

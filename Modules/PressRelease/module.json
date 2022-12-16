@@ -1,0 +1,13 @@
+{
+    "name": "PressRelease",
+    "alias": "pressrelease",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PressRelease\\Providers\\PressReleaseServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

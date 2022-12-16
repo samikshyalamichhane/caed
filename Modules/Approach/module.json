@@ -1,0 +1,13 @@
+{
+    "name": "Approach",
+    "alias": "approach",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Approach\\Providers\\ApproachServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

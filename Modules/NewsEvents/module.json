@@ -1,0 +1,13 @@
+{
+    "name": "NewsEvents",
+    "alias": "newsevents",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\NewsEvents\\Providers\\NewsEventsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

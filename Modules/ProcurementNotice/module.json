@@ -1,0 +1,13 @@
+{
+    "name": "ProcurementNotice",
+    "alias": "procurementnotice",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ProcurementNotice\\Providers\\ProcurementNoticeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

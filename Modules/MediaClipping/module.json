@@ -1,0 +1,13 @@
+{
+    "name": "MediaClipping",
+    "alias": "mediaclipping",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MediaClipping\\Providers\\MediaClippingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
