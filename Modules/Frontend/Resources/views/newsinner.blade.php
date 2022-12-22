@@ -39,12 +39,14 @@
                                     <a href="#">help</a>
                                 </div>
                                 <h2>{{$news->title}}</h2>
+                               
                                 <div class="post-meta">
                                     <!--<span><i class="fal fa-eye"></i>232 Views</span>-->
                                     <!--<span><i class="fal fa-comments"></i>35 Comments</span>-->
                                     <span><i class="fal fa-calendar-alt"></i>{{ \Carbon\Carbon::parse($news->created_at)->format('jS F, Y') }}
                                     </span>
                                 </div>
+                                 <img src="https://caed.webhousejapan.com//storage/public/projects/1671097164.jpg" alt="">
                                 <p>{!! $news->description !!}</p>
                             </div>
                         </div>
@@ -57,7 +59,7 @@
                                     <a href="news-details.html">donate</a>
                                 </div>
                             </div> -->
-                            <div class="col-lg-6 col-12 text-lg-right">
+                            <div class="col-lg-6 col-12">
                                 <h4>Social Share</h4>
                                 <div class="social-share" style="align: center;">
                                     <!-- Go to www.addthis.com/dashboard to customize your tools -->

@@ -60,6 +60,7 @@ class SiteController extends Controller
         $site->youtube = $request->youtube;
         $site->twitter = $request->twitter;
         $site->address = $request->address;
+        $site->volunteer_detail = $request->volunteer_detail;
         $site->map = $request->map;
         if ($request->hasFile('header_logo')) {
             $file = $request->header_logo;
@@ -168,27 +169,6 @@ class SiteController extends Controller
         }
         $site->save();
         return redirect()->back()->with('success', 'Site saved successfully');
-    }
-
-    public function saveOpeningHour(Request $request)
-    {
-        $openingHour = "";
-        $latest = OpeningHour::latest()->first();
-        if ($latest) {
-            $openingHour = $latest;
-        } else {
-            $openingHour = new OpeningHour;
-        }
-
-        $openingHour->sunday = $request->sunday;
-        $openingHour->monday = $request->monday;
-        $openingHour->tuesday = $request->tuesday;
-        $openingHour->wednesday = $request->wednesday;
-        $openingHour->thursday = $request->thursday;
-        $openingHour->friday = $request->friday;
-        $openingHour->saturday = $request->saturday;
-        $openingHour->save();
-        return redirect()->back()->with('success', 'Opening hour saved successfully');
     }
 
     public function about(Request $request)

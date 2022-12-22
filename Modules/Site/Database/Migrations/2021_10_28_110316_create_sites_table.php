@@ -29,6 +29,7 @@ class CreateSitesTable extends Migration
             $table->text('email2')->nullable();
             $table->text('contact1')->nullable();
             $table->text('contact2')->nullable();
+            $table->text('volunteer_detail')->nullable();
 
             // Social Media Links
             $table->text('facebook')->nullable();
