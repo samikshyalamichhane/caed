@@ -1,6 +1,6 @@
 @extends('frontend::layouts.master')
 @section('content')
-<section class="page-banner-wrap bg-cover sameoverlay" style="background-image: url('{{Storage::url($dashboard_site->contact_banner)}}')">
+<section class="page-banner-wrap bg-cover sameoverlay" style="background-image: url('{{Storage::url($project->bg_image)}}')">
     <div class="inner-overlay"></div>
     <div class="container">
         <div class="row align-items-center">
