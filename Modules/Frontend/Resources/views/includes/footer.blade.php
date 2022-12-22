@@ -133,6 +133,7 @@
     <script src="{{ asset('frontend/assets/js/easypiechart.min.js') }}"></script>
     <!--<script src="{{ asset('frontend/lib/animate/animate.min.css') }}assets/js/counterup.min.js"></script>-->
     <script src="{{ asset('frontend/assets/js/wow.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/lightbox.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/metismenu.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/timeline.min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/ajax-mail.js') }}"></script>

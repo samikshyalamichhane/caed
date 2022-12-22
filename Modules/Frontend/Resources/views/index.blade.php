@@ -124,7 +124,7 @@
                         <img src="{{Storage::url($homepage->home_image)}}??{{asset('assets/img/img1.png')}}" alt="" class="img-fluid">
                     </div>
                     <div class="our-experience text-white d-none d-sm-block">
-                        <h1>{{$homepage->home_year}}</h1>
+                        <h1>{{$homepage->home_year}} <br><span> of community empowerment</span></h1>
                     </div>
                 </div>
             </div>

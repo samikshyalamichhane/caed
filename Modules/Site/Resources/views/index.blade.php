@@ -243,6 +243,12 @@
                                 <input type="text" name="map" class="form-control" value="{{ $site->map }}" placeholder="Enter Map">
                             </div>
                         </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="volunteer_detail">Volunteer Details</label>
+                                <textarea name="volunteer_detail" class="form-control"  placeholder="Enter Volunteer Detail">{{ $site->volunteer_detail }}</textarea>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
