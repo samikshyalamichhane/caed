@@ -39,7 +39,7 @@ class FrontendController extends Controller
     }
     public function index(){
         $site = Site::first();
-        SEOMeta::setTitle($site->meta_title);
+        SEOMeta::setTitle($site->meta_title ? $site->meta_title: $site->title);
         SEOMeta::setDescription($site->description);
         SEOMeta::setCanonical(url()->current());
         // SEOMeta::addMeta('article:published_time', $about->created_at->toW3CString(), 'property');
@@ -55,7 +55,7 @@ class FrontendController extends Controller
     public function about(){
         $approaches = Approach::published()->get();
         $about = Aboutus::first();
-        SEOMeta::setTitle($about->meta_title);
+        SEOMeta::setTitle($about->meta_title?$about->meta_title:$about->name);
         SEOMeta::setDescription($about->meta_description);
         SEOMeta::setCanonical(url()->current());
         // SEOMeta::addMeta('article:published_time', $about->created_at->toW3CString(), 'property');
@@ -145,7 +145,7 @@ class FrontendController extends Controller
 
     public function newsInner($slug){
         $news = NewsEvent::where('slug',$slug)->first();
-        SEOMeta::setTitle($news->meta_title);
+        SEOMeta::setTitle($news->meta_title ?$news->meta_title : $news->title);
         SEOMeta::setDescription($news->meta_description);
         SEOMeta::setCanonical(url()->current());
         SEOMeta::addMeta('article:published_time', $news->created_at->toW3CString(), 'property');
@@ -161,7 +161,7 @@ class FrontendController extends Controller
 
     public function issueAndThemes(){
         $projectcat = ProjectCategory::where('slug','issues-and-themes')->first();
-        SEOMeta::setTitle($projectcat->meta_title);
+        SEOMeta::setTitle($projectcat->meta_title ?$projectcat->meta_title : $projectcat->title);
         SEOMeta::setDescription($projectcat->meta_description);
         SEOMeta::setCanonical(url()->current());
         SEOMeta::addMeta('article:published_time', $projectcat->created_at->toW3CString(), 'property');
@@ -172,7 +172,7 @@ class FrontendController extends Controller
 
     public function supportAndDonate(){
         $page = Page::where('slug','support-and-donate')->first();
-        SEOMeta::setTitle($page->meta_title);
+        SEOMeta::setTitle($page->meta_title ? $page->meta_title : $page->title);
         SEOMeta::setDescription($page->meta_description);
         SEOMeta::setCanonical(url()->current());
         SEOMeta::addMeta('article:published_time', $page->created_at->toW3CString(), 'property');

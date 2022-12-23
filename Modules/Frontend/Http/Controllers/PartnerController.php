@@ -31,7 +31,7 @@ class PartnerController extends Controller
 
     public function projectDetails($slug){
         $project = Project::where('slug',$slug)->first();
-        SEOMeta::setTitle($project->meta_title);
+        SEOMeta::setTitle($project->meta_title ?$project->meta_title : $project->title);
         SEOMeta::setDescription($project->meta_description);
         SEOMeta::setCanonical(url()->current());
         SEOMeta::addMeta('article:published_time', $project->created_at->toW3CString(), 'property');
