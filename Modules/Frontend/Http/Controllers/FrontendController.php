@@ -38,11 +38,12 @@ class FrontendController extends Controller
         $this->info = Site::latest()->first();
     }
     public function index(){
-        SEOMeta::setTitle('HomePage-caed');
-        SEOMeta::setDescription('HomePage-caed');
+        $site = Site::first();
+        SEOMeta::setTitle($site->meta_title);
+        SEOMeta::setDescription($site->description);
         SEOMeta::setCanonical(url()->current());
-        // SEOMeta::addMeta('article:published_time', $page->created_at->toW3CString(), 'property');
-        SEOMeta::addKeyword('HomePage-caed');
+        // SEOMeta::addMeta('article:published_time', $about->created_at->toW3CString(), 'property');
+        SEOMeta::addKeyword($site->meta_keyword);
         $approaches = Approach::published()->get();
         $news =NewsEvent::published()->ordered()->get(); 
         $projects = Project::published()->ordered()->get();
@@ -54,6 +55,11 @@ class FrontendController extends Controller
     public function about(){
         $approaches = Approach::published()->get();
         $about = Aboutus::first();
+        SEOMeta::setTitle($about->meta_title);
+        SEOMeta::setDescription($about->meta_description);
+        SEOMeta::setCanonical(url()->current());
+        // SEOMeta::addMeta('article:published_time', $about->created_at->toW3CString(), 'property');
+        SEOMeta::addKeyword($about->keyword);
         $exec_teams = Team::where('category','executive_board')->get();
         $staffs = Team::where('category','staff')->get();
         return view('frontend::about',compact('approaches','about','exec_teams','staffs'));
@@ -146,6 +152,7 @@ class FrontendController extends Controller
         SEOMeta::addKeyword($news->keyword);
         OpenGraph::setDescription($news->description);
         OpenGraph::setTitle($news->title);
+        OpenGraph::addImage($news->image);
         OpenGraph::setUrl(url()->current());
         OpenGraph::addProperty('type', 'news and events');
         $relatedposts = NewsEvent::where('id','!=',$news->id)->get();
