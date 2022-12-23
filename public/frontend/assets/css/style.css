@@ -4364,7 +4364,9 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
   opacity: 1;
   visibility: visible;
 }
-
+.skills-section .skill-box-items .single-skill-box:hover .skill-content span{
+    background:none!important;
+}
 .skills-section .skill-box-items .single-skill-box::before {
   position: absolute;
   width: 100%;
@@ -9329,6 +9331,10 @@ header.header-box-style .box-wrap .main-menu ul > li > a, header.header-1 .box-w
     height: 300px;
 width: 100%;
 object-fit: cover;
+}
+.section-padding h1 span{
+    display:block;
+    font-size:18px;
 }
 /* ============== Responsive Page Css starts ============== --*/
 @media (max-width: 767px) {
