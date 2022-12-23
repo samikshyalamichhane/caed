@@ -20,6 +20,27 @@
                 <div class="card">
                     <div class="card-header"><i class="fa fa-align-justify"></i> Edit Resource</div>
                     <div class="card-body">
+                    <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="meta_title">Meta Title</label>
+                                    <input type="text" name="meta_title" class="form-control" placeholder="Enter Meta Title" value="{{$resource->meta_title}}">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="meta_keyword">Meta KeyWord</label>
+                                    <input type="text" name="keyword" class="form-control" placeholder="Enter Meta Keyword" value="{{$resource->keyword}}">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="description">Meta Description</label>
+                                    <textarea name="meta_description" class="form-control">{{$resource->meta_description}}
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">

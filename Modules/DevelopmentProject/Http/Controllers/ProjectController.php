@@ -44,6 +44,9 @@ class ProjectController extends Controller
             $project->title = $request->title;
             $project->projectCategory_id = $request->projectCategory_id;
             $project->description = $request->description;
+            $project->meta_description = $request->meta_description;
+            $project->meta_title = $request->meta_title;
+            $project->keyword = $request->keyword;
             $project->publish = $request->publish ? 1 : 0;
             if ($request->hasFile('image')) {
                 $file = $request->image;
@@ -84,6 +87,9 @@ class ProjectController extends Controller
             $project->title = $request->title;
             $project->projectCategory_id = $request->projectCategory_id?$request->projectCategory_id:$project->projectCategory_id;
             $project->description = $request->description;
+            $project->meta_description = $request->meta_description;
+            $project->meta_title = $request->meta_title;
+            $project->keyword = $request->keyword;
             $project->publish = $request->publish ? 1 : 0;
             if ($request->hasFile('image')) {
                 $file = $request->image;

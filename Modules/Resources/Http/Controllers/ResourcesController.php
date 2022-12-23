@@ -38,6 +38,9 @@ class ResourcesController extends Controller
             $resource->title = $request->title;
             $resource->category = $request->category;
             $resource->description = $request->description;
+            $resource->meta_description = $request->meta_description;
+            $resource->meta_title = $request->meta_title;
+            $resource->keyword = $request->keyword;
             $resource->publish = $request->publish ? 1 : 0;
             if($request->hasFile('file')){
                 $file = $request->file;
@@ -69,6 +72,9 @@ class ResourcesController extends Controller
              $resource->title = $request->title;
              $resource->category = $request->category;
             $resource->description = $request->description;
+            $resource->meta_description = $request->meta_description;
+            $resource->meta_title = $request->meta_title;
+            $resource->keyword = $request->keyword;
             $resource->publish = $request->publish ? 1 : 0;
             if($request->hasFile('file')){
                 $file = $request->file;

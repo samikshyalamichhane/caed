@@ -87,6 +87,39 @@
     @csrf
     
         <div class="content">
+        <div>
+                <input type="checkbox" id="question1" name="q"  class="questions">
+                <div class="plus">+</div>
+                <label for="question1" class="question font-weight-bold">
+                    SEO DETAILS:
+                </label>
+                <div class="answers">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="meta_title">Meta Title</label>
+                                <input type="text" name="meta_title" class="form-control" placeholder="Enter Meta Title"
+                                    value="{{ $aboutus->meta_title }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="meta_keyword">Meta KeyWord</label>
+                                <input type="text" name="meta_keyword" class="form-control" placeholder="Enter Meta Keyword"
+                                    value="{{ $aboutus->meta_keyword }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="description">Meta Description</label>
+                                <textarea name="description" class="form-control">
+                                    {{ $aboutus->description }}
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>
                 <input type="checkbox" id="question1" name="q"  class="questions">
                 <div class="plus">+</div>

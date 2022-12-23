@@ -28,6 +28,9 @@ class AboutusController extends Controller
         $aboutus->short_description = $request->short_description;
         $aboutus->approach_title = $request->approach_title;
         $aboutus->approach_short_description = $request->approach_short_description;
+        $aboutus->meta_description = $request->meta_description;
+            $aboutus->meta_title = $request->meta_title;
+            $aboutus->keyword = $request->keyword;
         // $aboutus->home_description = $request->home_description;
         // $aboutus->navbar_title = $request->navbar_title;
         // $aboutus->home_year = $request->home_year;

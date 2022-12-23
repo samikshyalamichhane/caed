@@ -35,6 +35,9 @@ class NewsEventsController extends Controller
         ]);
         try {
             $newsevent = new NewsEvent();
+            $newsevent->meta_title = $request->meta_title;
+            $newsevent->meta_description = $request->meta_description;
+            $newsevent->keyword = $request->keyword;
             $newsevent->title = $request->title;
             $newsevent->description = $request->description;
             $newsevent->short_description = $request->short_description;
@@ -77,6 +80,9 @@ class NewsEventsController extends Controller
             'bg_image' => 'nullable|mimes:jpg,png,jpeg,gif,svg|max:2000'
         ]);
         try {
+            $newsevent->meta_title = $request->meta_title;
+            $newsevent->meta_description = $request->meta_description;
+            $newsevent->keyword = $request->keyword;
             $newsevent->title = $request->title;
             $newsevent->description = $request->description;
             $newsevent->short_description = $request->short_description;

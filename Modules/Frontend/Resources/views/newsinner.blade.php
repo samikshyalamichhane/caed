@@ -1,4 +1,5 @@
 @extends('frontend::layouts.master')
+
 @section('content')
 
 <section class="page-banner-wrap bg-cover sameoverlay" style="background-image: url('{{Storage::url($news->bg_image)}}')">

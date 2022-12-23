@@ -18,7 +18,29 @@
                 @csrf
                 <div class="card">
                     <div class="card-header"><i class="fa fa-align-justify"></i> Add News</div>
+
                     <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="meta_title">Meta Title</label>
+                                    <input type="text" name="meta_title" class="form-control" placeholder="Enter Meta Title">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="meta_keyword">Meta KeyWord</label>
+                                    <input type="text" name="keyword" class="form-control" placeholder="Enter Meta Keyword">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="description">Meta Description</label>
+                                    <textarea name="meta_description" class="form-control">
+                                </textarea>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
@@ -37,16 +59,14 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="short_description">News Short Description</label>
-                                    <textarea name="short_description" class="form-control"
-                                        required>{{ old('short_description') }}</textarea>
+                                    <textarea name="short_description" class="form-control" required>{{ old('short_description') }}</textarea>
                                 </div>
                             </div>
 
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="description">News Description</label>
-                                    <textarea name="description" class="form-control"
-                                        required>{{ old('description') }}</textarea>
+                                    <textarea name="description" class="form-control" required>{{ old('description') }}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -96,9 +116,10 @@
 @endsection
 <script>
     function preview() {
-        frame.src=URL.createObjectURL(event.target.files[0]);
+        frame.src = URL.createObjectURL(event.target.files[0]);
     }
+
     function preview1() {
-        frame1.src=URL.createObjectURL(event.target.files[0]);
+        frame1.src = URL.createObjectURL(event.target.files[0]);
     }
 </script>

@@ -14,12 +14,32 @@
             @if(Session::has('error'))
             @include('errors.catch-error',['catch_error'=>Session::get('error')])
             @endif
-            <form method="post" action="{{ route('ProjectCategory.update',$projectCategories->id) }}"
-                enctype="multipart/form-data">
+            <form method="post" action="{{ route('ProjectCategory.update',$projectCategories->id) }}" enctype="multipart/form-data">
                 @csrf
                 <div class="card">
                     <div class="card-header"><i class="fa fa-align-justify"></i> Edit Project Category</div>
                     <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="meta_title">Meta Title</label>
+                                    <input type="text" name="meta_title" class="form-control" placeholder="Enter Meta Title" value="{{$projectCategories->meta_title}}">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="meta_keyword">Meta KeyWord</label>
+                                    <input type="text" name="keyword" class="form-control" placeholder="Enter Meta Keyword" value="{{$projectCategories->keyword}}">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="description">Meta Description</label>
+                                    <textarea name="meta_description" class="form-control">{{$projectCategories->meta_description}}
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
@@ -49,9 +69,10 @@
 @endsection
 <script>
     function preview() {
-        frame.src=URL.createObjectURL(event.target.files[0]);
+        frame.src = URL.createObjectURL(event.target.files[0]);
     }
+
     function preview1() {
-        frame1.src=URL.createObjectURL(event.target.files[0]);
+        frame1.src = URL.createObjectURL(event.target.files[0]);
     }
 </script>

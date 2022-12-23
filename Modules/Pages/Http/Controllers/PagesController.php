@@ -39,6 +39,9 @@ class PagesController extends Controller
             $page->title = $request->title;
             $page->description = $request->description;
             $page->short_description = $request->short_description;
+            $page->meta_description = $request->meta_description;
+            $page->meta_title = $request->meta_title;
+            $page->keyword = $request->keyword;
             $page->publish = $request->publish ? 1 : 0;
             if ($request->hasFile('image')) {
                 $file = $request->image;
@@ -81,6 +84,9 @@ class PagesController extends Controller
             $page->title = $request->title;
             $page->description = $request->description;
             $page->short_description = $request->short_description;
+            $page->meta_description = $request->meta_description;
+            $page->meta_title = $request->meta_title;
+            $page->keyword = $request->keyword;
             $page->publish = $request->publish ? 1 : 0;
             if ($request->hasFile('image')) {
                 $file = $request->image;
@@ -105,7 +111,7 @@ class PagesController extends Controller
 
     public function destroy($id)
     {
-        $page = page::findOrFail($id);
+        $page = Page::findOrFail($id);
         $page->delete();
         return redirect()->route('page.index')->with('success', 'pages deleted successfully');
     }

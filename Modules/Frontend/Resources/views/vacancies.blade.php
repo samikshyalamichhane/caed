@@ -37,7 +37,7 @@
                             <!--<div class="post-featured-thumb bg-cover" style="background-image: url('assets/img/img1.jpg')"></div>-->
                             <div class="post-content">
                                
-                                <h2><a href="vacancies-detail.html">{{$vacancy->title}}</a></h2>
+                                <h2><a href="#">{{$vacancy->title}}</a></h2>
                                 
                                 <p>{!! $vacancy->description !!}</p>
                                  <div class="d-flex justify-content-between align-items-center mt-30">

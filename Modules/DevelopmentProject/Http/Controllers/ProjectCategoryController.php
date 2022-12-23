@@ -35,6 +35,9 @@ class ProjectCategoryController extends Controller
         try {
             $projectCategory = new ProjectCategory();
             $projectCategory->title = $request->title;
+            $projectCategory->meta_description = $request->meta_description;
+            $projectCategory->meta_title = $request->meta_title;
+            $projectCategory->keyword = $request->keyword;
             $projectCategory->publish = $request->publish ? 1 : 0;
             $projectCategory->save();
             return redirect()->route('ProjectCategory.index')->with('success', 'ProjectCategory created successfully');
@@ -57,6 +60,9 @@ class ProjectCategoryController extends Controller
         ]);
         try {
             $projectCategory->title = $request->title;
+            $projectCategory->meta_description = $request->meta_description;
+            $projectCategory->meta_title = $request->meta_title;
+            $projectCategory->keyword = $request->keyword;
             $projectCategory->publish = $request->publish ? 1 : 0;
             $projectCategory->save();
             return redirect()->route('ProjectCategory.index')->with('success', 'projectCategory updated successfully');

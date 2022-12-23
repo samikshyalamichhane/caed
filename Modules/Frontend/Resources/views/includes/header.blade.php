@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="modinatheme">
     <!-- ======== Page title ============ -->
-    <title>CAED | Centre for Agro-Ecology and Development</title>
+    {!! SEOMeta::generate() !!}
+    {!! OpenGraph::generate() !!}
+
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="{{ Storage::url(@$dashboard_site->fav_icon) }}? {{ Storage::url(@$dashboard_site->fav_icon) }} :{{ asset('frontend/assets/img/caedlogo.jpg') }}">
     <!-- ===========  All Stylesheet ================= -->
