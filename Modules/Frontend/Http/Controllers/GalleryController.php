@@ -24,11 +24,11 @@ class GalleryController extends Controller
 
     public function galleryInner($slug){
         $gallery = ImageGallery::where('slug',$slug)->first();
-        SEOMeta::setTitle($gallery->meta_title);
-        SEOMeta::setDescription($gallery->meta_description);
+        SEOMeta::setTitle($gallery->title);
+        SEOMeta::setDescription($gallery->description);
         SEOMeta::setCanonical(url()->current());
-        SEOMeta::addMeta('article:published_time', $gallery->created_at->toW3CString(), 'property');
-        SEOMeta::addKeyword($gallery->keyword);
+        // SEOMeta::addMeta('article:published_time', $gallery->created_at->toW3CString(), 'property');
+        SEOMeta::addKeyword($gallery->title);
         $images = Image::where('image_id',$gallery->id)->get();
         return view('frontend::galleryinner',compact('gallery','images'));
     }
