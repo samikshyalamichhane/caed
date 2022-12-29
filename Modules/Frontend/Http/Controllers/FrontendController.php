@@ -153,7 +153,7 @@ class FrontendController extends Controller
         SEOMeta::addKeyword($news->keyword);
         OpenGraph::setDescription($news->description);
         OpenGraph::setTitle($news->title);
-        OpenGraph::addImage(Storage::url($news->image));
+        OpenGraph::addImage(\Storage::url($news->image));
         OpenGraph::setUrl(url()->current());
         OpenGraph::addProperty('type', 'news and events');
         $relatedposts = NewsEvent::where('id','!=',$news->id)->get();

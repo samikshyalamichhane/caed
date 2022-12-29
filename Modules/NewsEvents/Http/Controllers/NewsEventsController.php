@@ -33,6 +33,7 @@ class NewsEventsController extends Controller
             'image' => 'nullable|mimes:jpg,png,jpeg,gif,svg|max:2000',
             'bg_image' => 'nullable|mimes:jpg,png,jpeg,gif,svg|max:2000'
         ]);
+        // dd($request->all());
         try {
             $newsevent = new NewsEvent();
             $newsevent->meta_title = $request->meta_title;
@@ -47,7 +48,7 @@ class NewsEventsController extends Controller
                 $file = $request->image;
                 $filename = time() . '.' . $file->getClientOriginalExtension();
                 // $path = Storage::put('public/teams', $file, 'public');
-                $path = $file->storeAs('public/newsevents', $filename);
+                $path = $file->storeAs('public/newsevent', $filename);
                 $newsevent->image = $path;
             }
             if ($request->hasFile('bg_image')) {
@@ -57,6 +58,7 @@ class NewsEventsController extends Controller
                 $path = $file->storeAs('public/newsevents', $filename);
                 $newsevent->bg_image = $path;
             }
+            // dd($newsevent);
             $newsevent->save();
             return redirect()->route('newsevent.index')->with('success', 'NewsEvents created successfully');
         } catch (\Exception $e) {

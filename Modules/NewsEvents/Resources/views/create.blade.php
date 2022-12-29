@@ -76,7 +76,7 @@
                                 <div class="row">
                                     <div class="col-6 colxs-12">
                                         <div class="form-check checkbox">
-                                            <input type="file" name="image" class="form-control" onchange="preview()">
+                                        <input type="file" name="image" class="form-control" onchange="preview()">
                                             <img id="frame" src="" width="100px" height="100px" />
                                         </div>
                                     </div>
