@@ -32,8 +32,9 @@
                                     <select class="form-control form-control-sm" id="category" name="category">
                                         <option value="">Select Category</option>
                                         <option value="{{ $team->category }}" {{ $team->category ? 'selected' : '' }}>{{ $team->category }}</option>
-                                        <option value="Board Of Director">Board Of Director</option>
-                                        <option value="Management">Management</option>
+                                        <option value="executive_board">Executive Board</option>
+                                        <option value="wogcrpstaff">WoGCRP staffs</option>
+                                        <option value="klepstaff">KLEP staffs</option>
                                     </select>
                                 </div>
                             </div>

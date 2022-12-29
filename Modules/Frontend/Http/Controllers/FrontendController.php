@@ -61,8 +61,9 @@ class FrontendController extends Controller
         // SEOMeta::addMeta('article:published_time', $about->created_at->toW3CString(), 'property');
         SEOMeta::addKeyword($about->keyword);
         $exec_teams = Team::where('category','executive_board')->get();
-        $staffs = Team::where('category','staff')->get();
-        return view('frontend::about',compact('approaches','about','exec_teams','staffs'));
+        $wogcrpstaffs = Team::where('category','wogcrpstaff')->get();
+        $klepstaffs = Team::where('category','klepstaff')->get();
+        return view('frontend::about',compact('approaches','about','exec_teams','wogcrpstaffs','klepstaffs'));
     }
 
     public function resources(){
@@ -152,7 +153,7 @@ class FrontendController extends Controller
         SEOMeta::addKeyword($news->keyword);
         OpenGraph::setDescription($news->description);
         OpenGraph::setTitle($news->title);
-        OpenGraph::addImage($news->image);
+        OpenGraph::addImage(Storage::url($news->image));
         OpenGraph::setUrl(url()->current());
         OpenGraph::addProperty('type', 'news and events');
         $relatedposts = NewsEvent::where('id','!=',$news->id)->get();

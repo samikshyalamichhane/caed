@@ -80,66 +80,6 @@
                     <a href="#"><img src="{{Storage::url($about->organizational_image)}}" alt=""></a>
                 </div>
             </div>
-
-            <!-- <div class="col-12 p-md-0">
-                    <div class="featured-timeline">
-                        <div class="timeline">
-                            <div class="timeline__wrap">
-                              <div class="timeline__items">
-                                
-                                <div class="timeline__item">
-                                  <div class="timeline__content">
-                                    <h2>1998</h2>
-                                    <p>- Journey Was Started</p>
-                                    <img src="assets/img/timeline/1.jpg" alt="">
-                                  </div>
-                                </div>
-                                
-                                <div class="timeline__item">
-                                  <div class="timeline__content">
-                                    <h2>2002</h2>
-                                    <p>- Journey Was Started</p>
-                                    <img src="assets/img/timeline/2.jpg" alt="">
-                                  </div>
-                                </div>
-                                
-                                <div class="timeline__item">
-                                  <div class="timeline__content">
-                                    <h2>2010</h2>
-                                    <p>- Journey Was Started</p>
-                                    <img src="assets/img/timeline/3.jpg" alt="">
-                                  </div>
-                                </div>
-                                
-                                <div class="timeline__item">
-                                  <div class="timeline__content">
-                                    <h2>2018</h2>
-                                    <p>- Journey Was Started</p>
-                                    <img src="assets/img/timeline/4.jpg" alt="">
-                                  </div>
-                                </div>
-                                
-                                <div class="timeline__item">
-                                  <div class="timeline__content">
-                                    <h2>2020</h2>
-                                    <p>- Journey Was Started</p>
-                                    <img src="assets/img/timeline/1.jpg" alt="">
-                                  </div>
-                                </div>
-                                
-                                <div class="timeline__item">
-                                  <div class="timeline__content">
-                                    <h2>2021</h2>
-                                    <p>- Journey Was Started</p>
-                                    <img src="assets/img/timeline/2.jpg" alt="">
-                                  </div>
-                                </div>
-                                
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
         </div>
     </div>
 </div>
@@ -169,76 +109,12 @@
                         </div>
                     </div>
                     @endforeach
-                    <!-- <div class="col-12 col-sm-6">
-                            <div class="single-skill-box bg-cover" style="background-image: url('assets/img/img4.jpg')">
-                                <div class="skill-content">
-                                    <div class="icon">
-                                        <i class="fal fa-hands-heart"></i>
-                                    </div>
-                                    <h3>Our Missions</h3>
-                                    <p>Become the One Who is Considered a Hero</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="single-skill-box bg-cover" style="background-image: url('assets/img/img5.jpg')">
-                                <div class="skill-content">
-                                    <div class="icon">
-                                        <i class="fal fa-medkit"></i>
-                                    </div>
-                                    <h3>Our Achievement</h3>
-                                    <p>Become the One Who is Considered a Hero</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="single-skill-box bg-cover" style="background-image: url('assets/img/img6.jpg')">
-                                <div class="skill-content">
-                                    <div class="icon">
-                                        <i class="fal fa-house-flood"></i>
-                                    </div>
-                                    <h3>Our Dream</h3>
-                                    <p>Become the One Who is Considered a Hero</p>
-                                </div>
-                            </div>
-                        </div> -->
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!--<section class="brands-carousel-section bg-cover bg-overlay section-padding"  style="background-image: url('assets/img/brand_carousel_bg.jpg')">-->
-<!--    <div class="container">-->
-<!--        <div class="row align-items-center">-->
-<!--            <div class="col-12 col-lg-12">-->
-<!--                <div class="brands-carousel-active owl-carousel d-flex align-items-center">-->
-<!--                    <div class="single-brand-logo">-->
-<!--                        <img src="assets/img/brand/1.png" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="single-brand-logo">-->
-<!--                        <img src="assets/img/brand/2.png" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="single-brand-logo">-->
-<!--                        <img src="assets/img/brand/3.png" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="single-brand-logo">-->
-<!--                        <img src="assets/img/brand/4.png" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="single-brand-logo">-->
-<!--                        <img src="assets/img/brand/5.png" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="single-brand-logo">-->
-<!--                        <img src="assets/img/brand/6.png" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="single-brand-logo">-->
-<!--                        <img src="assets/img/brand/1.png" alt="">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section> -->
 <section class="team-section section-padding">
     <div class="container">
         <div class="row">
@@ -275,10 +151,10 @@
             <div class="col-12 col-lg-8 offset-lg-2 text-center">
                 <div class="section-title mb-40">
                     <span><i class="fal fa-heart"></i>Team </span>
-                    <h1>Our<span>Staff</span></h1>
+                    <h1>WoGCRP<span>Staff</span></h1>
                 </div>
             </div>
-            @foreach($staffs as $staff)
+            @foreach($wogcrpstaffs as $staff)
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="single-team-member text-center">
                     <div class="member-img">
@@ -299,5 +175,34 @@
         </div>
     </div>
 </section>
+<section class="team-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                <div class="section-title mb-40">
+                    <span><i class="fal fa-heart"></i>Team </span>
+                    <h1>KLEP<span>Staff</span></h1>
+                </div>
+            </div>
+            @foreach($klepstaffs as $staff)
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-team-member text-center">
+                    <div class="member-img">
+                        <img src="{{Storage::url($staff->image)}}" alt="">
+                        <div class="small-element"></div>
+                    </div>
+                    <div class="member-details">
+                        <h3>{{$staff->name}}</h3>
+                        <span>{{$staff->position}}</span>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
 
+        <div class="join-team-btn text-center mt-50">
+            <a href="{{route('contact')}}">Join With Us</a>
+        </div>
+    </div>
+</section>
 @endsection
