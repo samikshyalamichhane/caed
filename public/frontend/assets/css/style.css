@@ -2836,7 +2836,7 @@ header.header-box-style .box-wrap .main-menu ul > li > ul li a, header.header-1 
   display: block;
   /*color: #202426;*/
   color:#fff;
-  padding: 15px 20px;
+  padding: 15px 15px;
 }
 
 header.header-box-style .box-wrap .main-menu ul > li > ul li a::before, header.header-1 .box-wrap .main-menu ul > li > ul li a::before {
@@ -9153,12 +9153,14 @@ footer h4{
 }
 .skills-section .section-title span,.team-section .section-title h1 span,.orgstr h1 span{
     padding-left:20px;
+    font-size:3.75rem!important;
 }
 .featured-timeline{
     display:none;
 }
 .orgstr h1 span{
     color:#2e813f;
+    font-size:3.75rem!important;
 }
 .orgstr h1,.orgstr span{
     color:#fff;

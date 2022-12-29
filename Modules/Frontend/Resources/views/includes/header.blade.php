@@ -87,7 +87,7 @@
                                                 <a href="{{route('about')}}">Organizational Structure</a>
                                             </li>
                                             <li>
-                                                <a href="{{route('about')}}">Approachs and Strategies </a>
+                                                <a href="{{route('about')}}">Approachs & Strategies </a>
                                                 <!--        <ul class="sub-menu">-->
                                                 <!--    <li>-->
                                                 <!--       <a href="{{route('about')}}">CAED Approach and Strategies</a>-->
@@ -99,7 +99,7 @@
                                                 <a href="{{route('about')}}">Our Team <i class="fa fa-angle-right"></i></a>
                                                 <ul class="sub-menu">
                                                     <li>
-                                                        <a href="{{route('about')}}">Executive Members</a>
+                                                        <a href="{{route('about')}}">Executive Committe (Board)</a>
                                                     </li>
                                                     <li>
                                                         <a href="{{route('about')}}">Our Staffs</a>
@@ -113,7 +113,7 @@
                                     <li><a class="has-arrow" href="{{route('projects')}}">Projects & Partners <i class="fa fa-angle-down"></i></a>
                                         <ul class="sub-menu">
                                             <li>
-                                                <a href="{{route('issueAndThemes')}}">Issues and Themes</a>
+                                                <a href="{{route('issueAndThemes')}}">Issues & Themes</a>
                                             </li>
                                             <li>
                                                 <a href="{{route('partners')}}">Our Partners <i class="fa fa-angle-right"></i></a>
@@ -274,16 +274,16 @@
                                     <li><a class="has-arrow" href="partner.html">Project & Partners</a>
                                         <ul class="sub-menu">
                                             <li>
-                                                <a href="issuesandthemes.html">Issues and Themes</a>
+                                                <a href="issuesandthemes.html">Issues & Themes</a>
                                             </li>
                                             <li>
                                                 <a href="partner.html">Our Partners</a>
                                             </li>
                                             <li>
-                                                <a href="partner.html">Onging Projects and Partners</a>
+                                                <a href="partner.html">Onging Projects & Partners</a>
                                             </li>
                                             <li>
-                                                <a href="partner.html">Completed Projects and Partners</a>
+                                                <a href="partner.html">Completed Projects & Partners</a>
                                             </li>
 
                                         </ul>

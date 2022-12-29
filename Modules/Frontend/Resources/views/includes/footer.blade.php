@@ -56,7 +56,7 @@
                                 <ul>
                                     <li><a href="{{route('about')}}">Who We Are</a></li>
                                     <li><a href="{{route('about')}}">Organizational Structure</a></li>
-                                    <li><a href="{{route('about')}}">Approach and Strategies</a></li>
+                                    <li><a href="{{route('about')}}">Approach & Strategies</a></li>
                                     <li><a href="{{route('about')}}">Our Team</a></li>
                                     <!--<li><a href="team.html">Team</a></li>                                  -->
                                     <!--<li><a href="contact.html">Contact Us</a></li>                                    -->
@@ -79,7 +79,7 @@
                                 <h4>Getting Involved</h4>
                             </div>
                             <ul>
-                                <li><a href="{{route('supportAndDonate')}}">Support and Donate</a></li>
+                                <li><a href="{{route('supportAndDonate')}}">Support & Donate</a></li>
                                 <li><a href="{{route('volunteer')}}">Volunteering</a></li>
                                 <li><a href="{{route('vacancyList')}}">Vacancies</a></li>
                                                              

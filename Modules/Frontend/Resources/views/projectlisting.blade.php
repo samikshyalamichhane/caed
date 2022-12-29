@@ -11,7 +11,7 @@
                             <h4><strong>Our Mission:</strong> Food, Education, Medicine</h4>
                         </div>
                         <div class="page-title">
-                            <h1>Project & Partners</h1>
+                            <h1>Project and Partners</h1>
                         </div>
                     </div>
                 </div>
@@ -19,7 +19,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Project & Partners</li>
+                          <li class="breadcrumb-item active" aria-current="page">Project and Partners</li>
                         </ol>
                     </nav>
                 </div>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="col-xl-5 pr-xl-0">
                             <div class="event-info">
-                                <h2><a href="event-details.html">{{$project->title}}</a></h2>
+                                <h2><a href="{{route('projectDetail',$project->slug)}}">{{$project->title}}</a></h2>
                                 <p>{!! $project->description !!}</p>
                             </div>
                         </div>

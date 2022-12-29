@@ -160,7 +160,7 @@
                     <div class="single-block-item">
                         <div class="icon">
                             <!--<img src="assets/img/block-icon1.png" alt="caed">-->
-                            <i class="{{$approach->icon ?? 'fa fa-users'}}" aria-hidden="true"></i>
+                            <i class="fa fa-users" aria-hidden="true"></i>
                         </div>
                         <div class="heading">
                             <h3>{{$approach->title}}</h3>
@@ -179,7 +179,7 @@
                     <div class="single-block-item">
                         <div class="icon">
                             <!--<img src="assets/img/block-icon1.png" alt="caed">-->
-                            <i class="{{$approach->icon ?? 'fa fa-users' }}" aria-hidden="true"></i>
+                            <i class="fa fa-users" aria-hidden="true"></i>
                         </div>
                         <div class="heading">
                             <h3>{{$approach->title}}</h3>

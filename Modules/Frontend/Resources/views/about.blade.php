@@ -245,7 +245,7 @@
             <div class="col-12 col-lg-8 offset-lg-2 text-center">
                 <div class="section-title mb-40">
                     <span><i class="fal fa-heart"></i>Team </span>
-                    <h1>Executive<span>Team</span></h1>
+                    <h1>Executive Committee<span>(Board)</span></h1>
                 </div>
             </div>
             @foreach($exec_teams as $staff)
