@@ -164,7 +164,7 @@
                         </div>
                         <div class="heading">
                             <h3>{{$approach->title}}</h3>
-                            <p>{!! $approach->description !!}</p>
+                            <!-- <p>{!! $approach->description !!}</p> -->
                         </div>
                     </div>
                     @endif
@@ -183,7 +183,7 @@
                         </div>
                         <div class="heading">
                             <h3>{{$approach->title}}</h3>
-                            <p>{!! $approach->description !!}</p>
+                            <!-- <p>{!! $approach->description !!}</p> -->
                         </div>
                     </div>
                     @endif
@@ -411,75 +411,6 @@
                         </div>
                     </div>
                     @endforeach
-                    {{--<div class="single-cause-item style-2">
-                            <div class="cause-featured-img bg-cover"
-                                style="background-image: url('assets/img/i4.jpg')">
-                                <a href="causes.html" class="cause-cat">water</a>
-                                <div class="donate-progress-bar wow fadeInLeft" data-wow-duration="2s"
-                                    data-percentage="90%">
-                                    <div class="progress-title-holder clearfix"> <span class="progress-number-wrapper">
-                                            <span class="progress-number-mark"> <span class="percent"></span> <span
-                                                    class="down-arrow"></span> </span> </span> </div>
-                                    <div class="progress-content-outter">
-                                        <div class="progress-content"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cause-details">
-                                <div class="cause-amount d-flex justify-content-between">
-                                    <div class="price-raised"> <i class="fal fa-location"></i> Dhading</div>
-                                    <div class="price-goal"> <i class=""></i><span>$30000</span> Budget
-                                    </div>
-                                </div>
-                                <h4> <a href="cause-details.html">Child Deserves Better Healthy Foods</a> </h4>
-                            </div>
-                        </div>
-                        <div class="single-cause-item style-2">
-                            <div class="cause-featured-img bg-cover"
-                                style="background-image: url('assets/img/i3.jpg')">
-                                <a href="causes.html" class="cause-cat">water</a>
-                                <div class="donate-progress-bar wow fadeInLeft" data-wow-duration="2s"
-                                    data-percentage="80%">
-                                    <div class="progress-title-holder clearfix"> <span class="progress-number-wrapper">
-                                            <span class="progress-number-mark"> <span class="percent"></span> <span
-                                                    class="down-arrow"></span> </span> </span> </div>
-                                    <div class="progress-content-outter">
-                                        <div class="progress-content"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cause-details">
-                                <div class="cause-amount d-flex justify-content-between">
-                                    <div class="price-raised"> <i class="fal fa-location"></i> Dhading</div>
-                                    <div class="price-goal"> <i class=""></i><span>$30000</span> Budget
-                                    </div>
-                                </div>
-                                <h4> <a href="cause-details.html">Childhood Education Development support</a> </h4>
-                            </div>
-                        </div>
-                        <div class="single-cause-item style-2">
-                            <div class="cause-featured-img bg-cover"
-                                style="background-image: url('assets/img/i4.jpg')">
-                                <a href="causes.html" class="cause-cat">water</a>
-                                <div class="donate-progress-bar wow fadeInLeft" data-wow-duration="2s"
-                                    data-percentage="55%">
-                                    <div class="progress-title-holder clearfix"> <span class="progress-number-wrapper">
-                                            <span class="progress-number-mark"> <span class="percent"></span> <span
-                                                    class="down-arrow"></span> </span> </span> </div>
-                                    <div class="progress-content-outter">
-                                        <div class="progress-content"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cause-details">
-                                <div class="cause-amount d-flex justify-content-between">
-                                    <div class="price-raised"> <i class="fal fa-location"></i> Dhading</div>
-                                    <div class="price-goal"> <i class=""></i><span>$30000</span> Budget
-                                    </div>
-                                </div>
-                                <h4> <a href="cause-details.html">Emergency response and school food</a> </h4>
-                            </div>
-                        </div>--}}
                 </div>
             </div>
         </div>
