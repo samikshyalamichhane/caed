@@ -65,6 +65,27 @@ class FrontendController extends Controller
         $klepstaffs = Team::where('category','klepstaff')->get();
         return view('frontend::about',compact('approaches','about','exec_teams','wogcrpstaffs','klepstaffs'));
     }
+    
+    public function whoWeAre(){
+        $about = Aboutus::first();
+        SEOMeta::setTitle($about->meta_title?$about->meta_title:$about->name);
+        SEOMeta::setDescription($about->meta_description);
+        SEOMeta::setCanonical(url()->current());
+        // SEOMeta::addMeta('article:published_time', $about->created_at->toW3CString(), 'property');
+        SEOMeta::addKeyword($about->keyword);
+        return view('frontend::whoweare',compact('about'));
+    }
+    
+    public function approachesAndStrategy(){
+        $approaches = Approach::published()->get();
+        $about = Aboutus::first();
+        SEOMeta::setTitle($about->meta_title?$about->meta_title:$about->name);
+        SEOMeta::setDescription($about->meta_description);
+        SEOMeta::setCanonical(url()->current());
+        // SEOMeta::addMeta('article:published_time', $about->created_at->toW3CString(), 'property');
+        SEOMeta::addKeyword($about->keyword);
+        return view('frontend::approach',compact('about','approaches'));
+    }
 
     public function resources(){
         SEOMeta::setTitle('Resources');
@@ -147,11 +168,11 @@ class FrontendController extends Controller
     public function newsInner($slug){
         $news = NewsEvent::where('slug',$slug)->first();
         SEOMeta::setTitle($news->meta_title ?$news->meta_title : $news->title);
-        SEOMeta::setDescription($news->meta_description);
+        SEOMeta::setDescription(strip_tags($news->meta_description));
         SEOMeta::setCanonical(url()->current());
         SEOMeta::addMeta('article:published_time', $news->created_at->toW3CString(), 'property');
         SEOMeta::addKeyword($news->keyword);
-        OpenGraph::setDescription($news->description);
+        OpenGraph::setDescription(strip_tags($news->description));
         OpenGraph::setTitle($news->title);
         OpenGraph::addImage(\Storage::url($news->image));
         OpenGraph::setUrl(url()->current());

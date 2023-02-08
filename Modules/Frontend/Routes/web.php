@@ -18,6 +18,8 @@ use Modules\Frontend\Http\Controllers\PartnerController;
 Route::get('/', [FrontendController::class,'index'])->name('index');
 Route::get('/contact', [FrontendController::class,'contact'])->name('contact');
 Route::get('/about', [FrontendController::class,'about'])->name('about');
+Route::get('/who-we-are', [FrontendController::class,'whoWeAre'])->name('whoWeAre');
+Route::get('/approaches-and-strategies', [FrontendController::class,'approachesAndStrategy'])->name('approachesAndStrategy');
 Route::get('/support-and-donate', [FrontendController::class,'supportAndDonate'])->name('supportAndDonate');
 Route::get('/resources', [FrontendController::class,'resources'])->name('resources');
 Route::get('/volunteer', [FrontendController::class,'volunteer'])->name('volunteer');

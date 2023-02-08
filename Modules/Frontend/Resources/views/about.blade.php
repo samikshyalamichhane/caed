@@ -27,48 +27,48 @@
     </div>
 </section>
 
-<section class="about-us-section section-padding about-page newabt">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="about-shots">
-                    <div class="about-main-img">
-                        <img src="{{Storage::url($about->aboutus_inner_image)}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 about_left_content mt-0 pr-lg-0 pl-lg-5">
-                <div class="section-title">
-                    <span><i class="fal fa-heart"></i>About Us</span>
-                    <h1>About<span>caed</span></h1>
-                </div>
-                <p>
-                    {!! $about->short_description !!}
-                </p>
+<!--<section class="about-us-section section-padding about-page newabt" id="who-we-are">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6">-->
+<!--                <div class="about-shots">-->
+<!--                    <div class="about-main-img">-->
+<!--                        <img src="{{Storage::url($about->aboutus_inner_image)}}" alt="" class="img-fluid">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-6 about_left_content mt-0 pr-lg-0 pl-lg-5">-->
+<!--                <div class="section-title">-->
+<!--                    <span><i class="fal fa-heart"></i>About Us</span>-->
+<!--                    <h1>Who We Are<span>caed</span></h1>-->
+<!--                </div>-->
+<!--                <p>-->
+<!--                    {!! $about->short_description !!}-->
+<!--                </p>-->
                      <!-- <div class="testimonial-quote">
-                    <div class="feedback">
-                        Join our community of monthly donors bringing clean water to
-                        people in need. <a href="#">Get Started Now</a>
-                    </div>
-                    <div class="user-info d-flex align-items-center">
-                        <div class="profile-img bg-cover" style="background-image: url('assets/img/user-img.jpg')">
-                        </div>
-                        <span>Rosalina. Williamson</span>
-                    </div>
-                </div> -->
+<!--                    <div class="feedback">-->
+<!--                        Join our community of monthly donors bringing clean water to-->
+<!--                        people in need. <a href="#">Get Started Now</a>-->
+<!--                    </div>-->
+<!--                    <div class="user-info d-flex align-items-center">-->
+<!--                        <div class="profile-img bg-cover" style="background-image: url('assets/img/user-img.jpg')">-->
+<!--                        </div>-->
+<!--                        <span>Rosalina. Williamson</span>-->
+<!--                    </div>-->
+<!--                </div> -->-->
 
-                <ul class="list-box">
-                    <li>We track every dollar</li>
-                    <li>We’re an open book</li>
-                    <li>100% goes to the field</li>
-                    <li>Received the highest grades</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+<!--                <ul class="list-box">-->
+<!--                    <li>We track every dollar</li>-->
+<!--                    <li>We’re an open book</li>-->
+<!--                    <li>100% goes to the field</li>-->
+<!--                    <li>Received the highest grades</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
-<div class="timeline-wrap bg-cover section-padding" style="background-image: url('{{Storage::url($about->organizational_back_image)}}' ?? {{asset('assets/img/timeline-bg.png')}}">
+<div class="timeline-wrap bg-cover section-padding" id="org-structure" style="background-image: url('{{Storage::url($about->organizational_back_image)}}' ?? {{asset('assets/img/timeline-bg.png')}}">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-10 offset-lg-1 text-center orgstr">
@@ -84,38 +84,38 @@
     </div>
 </div>
 
-<section class="skills-section section-padding">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 pr-lg-0">
-                <div class="section-title mb-4">
+<!--<section class="skills-section section-padding" id="approach">-->
+<!--    <div class="container">-->
+<!--        <div class="row align-items-center">-->
+<!--            <div class="col-lg-5 pr-lg-0">-->
+<!--                <div class="section-title mb-4">-->
 
-                    <h1>{{$about->approach_title}}</h1>
-                </div>
-                <p>{!! $about->approach_short_description !!}</p>
-            </div>
-            <div class="col-lg-6 offset-lg-1 mt-5 mt-lg-0">
-                <div class="skill-box-items row text-center">
-                    @foreach($approaches as $approach)
-                    <div class="col-12 col-sm-6">
-                        <div class="single-skill-box bg-cover" style="background-image: url('{{Storage::url($approach->image)}}')">
-                            <div class="skill-content">
-                                <div class="icon">
-                                    <i class="{{$approach->icon ?? 'fal fa-tint' }}"></i>
-                                </div>
-                                <h3>{{$approach->title}}</h3>
-                                <p>{!! $approach->description !!}</p>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!--                    <h1>{{$about->approach_title}}</h1>-->
+<!--                </div>-->
+<!--                <p>{!! $about->approach_short_description !!}</p>-->
+<!--            </div>-->
+<!--            <div class="col-lg-6 offset-lg-1 mt-5 mt-lg-0">-->
+<!--                <div class="skill-box-items row text-center">-->
+<!--                    @foreach($approaches as $approach)-->
+<!--                    <div class="col-12 col-sm-6">-->
+<!--                        <div class="single-skill-box bg-cover" style="background-image: url('{{Storage::url($approach->image)}}')">-->
+<!--                            <div class="skill-content">-->
+<!--                                <div class="icon">-->
+<!--                                    <i class="{{$approach->icon ?? 'fal fa-tint' }}"></i>-->
+<!--                                </div>-->
+<!--                                <h3>{{$approach->title}}</h3>-->
+<!--                                <p>{!! $approach->description !!}</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    @endforeach-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
-<section class="team-section section-padding">
+<section class="team-section section-padding" id="our-team">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2 text-center">

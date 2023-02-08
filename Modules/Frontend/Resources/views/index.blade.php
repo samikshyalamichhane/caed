@@ -222,7 +222,7 @@
             <div class="col-12 text-center mb-50">
                 <div class="section-title">
 
-                    <h1>News & Events</h1>
+                    <h1>News and Events</h1>
                 </div>
             </div>
         </div>
