@@ -84,7 +84,7 @@
                                                 <a href="{{route('whoWeAre')}}">Who We Are</a>
                                             </li>
                                             <li>
-                                                <a href="{{route('about')}}#org-structure">Organizational Structure</a>
+                                                <a href="{{route('organizationalStructure')}}">Organizational Structure</a>
                                             </li>
                                             <li>
                                                 <a href="{{route('approachesAndStrategy')}}">Approaches & Strategies </a>
@@ -96,13 +96,13 @@
                                                 <!--</ul>-->
                                             </li>
                                             <li>
-                                                <a href="{{route('about')}}#our-team">Our Team <i class="fa fa-angle-right"></i></a>
+                                                <a href="{{route('ourTeams')}}">Our Team <i class="fa fa-angle-right"></i></a>
                                                 <ul class="sub-menu">
                                                     <li>
-                                                        <a href="{{route('about')}}">Executive Committe (Board)</a>
+                                                        <a href="{{route('ourTeams')}}">Executive Committe (Board)</a>
                                                     </li>
                                                     <li>
-                                                        <a href="{{route('about')}}">Staffs</a>
+                                                        <a href="{{route('ourTeams')}}">Staffs</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -239,16 +239,16 @@
                                     <li><a class="has-arrow" href="{{route('about')}}">About Us</a>
                                         <ul class="sub-menu">
                                             <li>
-                                                <a href="{{route('about')}}">Who We Are</a>
+                                                <a href="{{route('whoWeAre')}}">Who We Are</a>
                                             </li>
                                             <li>
-                                                <a href="{{route('about')}}">Organizational Structure</a>
+                                                <a href="{{route('organizationalStructure')}}">Organizational Structure</a>
                                             </li>
                                             <li>
-                                                <a href="{{route('about')}}">Approach and Strategies</a>
+                                                <a href="{{route('approachesAndStrategy')}}">Approach and Strategies</a>
                                             </li>
                                             <li>
-                                                <a href="{{route('about')}}">Our Team</a>
+                                                <a href="{{route('ourTeams')}}">Our Team</a>
                                             </li>
 
                                         </ul>

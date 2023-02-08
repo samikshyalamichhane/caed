@@ -87,6 +87,31 @@ class FrontendController extends Controller
         return view('frontend::approach',compact('about','approaches'));
     }
 
+    public function organizationalStructure(){
+        $approaches = Approach::published()->get();
+        $about = Aboutus::first();
+        SEOMeta::setTitle($about->meta_title?$about->meta_title:$about->name);
+        SEOMeta::setDescription($about->meta_description);
+        SEOMeta::setCanonical(url()->current());
+        // SEOMeta::addMeta('article:published_time', $about->created_at->toW3CString(), 'property');
+        SEOMeta::addKeyword($about->keyword);
+        return view('frontend::organizationalstructure',compact('about','approaches'));
+    }
+
+    public function ourTeams(){
+        $approaches = Approach::published()->get();
+        $about = Aboutus::first();
+        SEOMeta::setTitle($about->meta_title?$about->meta_title:$about->name);
+        SEOMeta::setDescription($about->meta_description);
+        SEOMeta::setCanonical(url()->current());
+        // SEOMeta::addMeta('article:published_time', $about->created_at->toW3CString(), 'property');
+        SEOMeta::addKeyword($about->keyword);
+        $exec_teams = Team::where('category','executive_board')->get();
+        $wogcrpstaffs = Team::where('category','wogcrpstaff')->get();
+        $klepstaffs = Team::where('category','klepstaff')->get();
+        return view('frontend::ourteams',compact('about','approaches','exec_teams','wogcrpstaffs','klepstaffs'));
+    }
+
     public function resources(){
         SEOMeta::setTitle('Resources');
         SEOMeta::setDescription('Resources');

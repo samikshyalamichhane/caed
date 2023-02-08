@@ -121,9 +121,9 @@
                 </div>
             </div>
             <div>
-                <input type="checkbox" id="question1" name="q"  class="questions">
+                <input type="checkbox" id="question3" name="q"  class="questions">
                 <div class="plus">+</div>
-                <label for="question1" class="question font-weight-bold">
+                <label for="question3" class="question font-weight-bold">
                     WHO WE ARE:
                 </label>
                 <div class="answers">

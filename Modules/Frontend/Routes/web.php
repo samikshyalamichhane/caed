@@ -20,6 +20,8 @@ Route::get('/contact', [FrontendController::class,'contact'])->name('contact');
 Route::get('/about', [FrontendController::class,'about'])->name('about');
 Route::get('/who-we-are', [FrontendController::class,'whoWeAre'])->name('whoWeAre');
 Route::get('/approaches-and-strategies', [FrontendController::class,'approachesAndStrategy'])->name('approachesAndStrategy');
+Route::get('/organizational-structure', [FrontendController::class,'organizationalStructure'])->name('organizationalStructure');
+Route::get('/our-teams', [FrontendController::class,'ourTeams'])->name('ourTeams');
 Route::get('/support-and-donate', [FrontendController::class,'supportAndDonate'])->name('supportAndDonate');
 Route::get('/resources', [FrontendController::class,'resources'])->name('resources');
 Route::get('/volunteer', [FrontendController::class,'volunteer'])->name('volunteer');
