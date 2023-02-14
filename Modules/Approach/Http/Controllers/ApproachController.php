@@ -31,11 +31,13 @@ class ApproachController extends Controller
     {
         $this->validate($request, [
             'title' => 'required|max:150',
+            'category' => 'required',
             'description'=>'required'
         ]);
         try {
             $approach = new Approach();
             $approach->title = $request->title;
+            $approach->category = $request->category;
             $approach->description = $request->description;
             $approach->icon = $request->icon;
             $approach->publish = $request->publish ? 1 : 0;
@@ -64,10 +66,12 @@ class ApproachController extends Controller
         $approach = Approach::findOrFail($id);
         $this->validate($request, [
             'title' => 'required|max:150',
+            'category' => 'required',
             'description' => "required",
         ]);
         try {
             $approach->title = $request->title;
+            $approach->category = $request->category;
             $approach->description = $request->description;
             $approach->icon = $request->icon;
             $approach->publish = $request->publish ? 1 : 0;

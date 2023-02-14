@@ -78,7 +78,7 @@
 
                                     </li>
 
-                                    <li><a href="{{route('about')}}">About Us <i class="fa fa-angle-down"></i></a>
+                                    <li><a href="#">About Us <i class="fa fa-angle-down"></i></a>
                                         <ul class="sub-menu">
                                             <li>
                                                 <a href="{{route('whoWeAre')}}">Who We Are</a>

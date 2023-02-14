@@ -28,3 +28,12 @@ Route::prefix('admin')->group(function() {
     Route::middleware('can:Edit DevelopmentProject')->post('/project/{id}', 'ProjectController@update')->name('project.update');
     Route::middleware('can:Delete DevelopmentProject')->get('/project/{id}/delete', 'ProjectController@destroy')->name('project.delete');
 });
+
+Route::prefix('admin')->group(function() {
+    Route::middleware('can:View DevelopmentProject')->get('/project-partners', 'ProjectPartnerController@index')->name('projectpartner.index');
+    Route::middleware('can:Add DevelopmentProject')->get('/project-partners/create/{id}', 'ProjectPartnerController@create')->name('projectpartner.create');
+    Route::middleware('can:Add DevelopmentProject')->post('/project-partners/create', 'ProjectPartnerController@store')->name('projectpartner.store');
+    Route::middleware('can:Edit DevelopmentProject')->get('/project-partners/{id}', 'ProjectPartnerController@edit')->name('projectpartner.edit');
+    Route::middleware('can:Edit DevelopmentProject')->post('/project-partners/{id}', 'ProjectPartnerController@update')->name('projectpartner.update');
+    Route::middleware('can:Delete DevelopmentProject')->get('/project-partners/{id}/delete', 'ProjectPartnerController@destroy')->name('projectpartner.delete');
+});

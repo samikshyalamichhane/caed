@@ -11,7 +11,7 @@
                             <h4><strong>Our Mission:</strong> Food, Education, Medicine</h4>
                         </div>
                         <div class="page-title">
-                            <h1>Project and Partners</h1>
+                            <h1>Projects and Partners</h1>
                         </div>
                     </div>
                 </div>
@@ -19,7 +19,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Project and Partners</li>
+                          <li class="breadcrumb-item active" aria-current="page">Projects and Partners</li>
                         </ol>
                     </nav>
                 </div>

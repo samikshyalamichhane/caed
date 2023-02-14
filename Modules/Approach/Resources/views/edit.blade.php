@@ -28,6 +28,16 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
+                                    <label for="category">Select Category</label>
+                                    <select class="form-control form-control-sm" id="category" name="category">
+                                        <option value="">Select Category</option>
+                                        <option value="approaches" {{ $approach->category=='approaches' ? 'selected' : '' }}>Approaches</option>
+                                        <option value="strategies" {{ $approach->category=='strategies' ? 'selected' : '' }}>Strategies</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
                                     <label for="icon">Icon</label>
                                     <input name="icon" class="form-control" value="{{ $approach->icon }}">
                                 </div>

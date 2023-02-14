@@ -47,7 +47,7 @@
                                     <select name="projectCategory_id" for="projectCategory_id" class="form-control">
                                         <option value=""></option>
                                         @foreach($projectCategories as $category)
-                                        <option value="{{$category->id}}">{{$category->title}}</option>
+                                        <option value="{{$category->id}}" {{ $category->id == $projects->projectCategory_id ? 'selected' : '' }} >{{$category->title}}</option>
                                         @endforeach
                                     </select>
                                 </div>

@@ -34,7 +34,7 @@
                                 <th>S.N</th>
                                 <th>Project Category Id</th>
                                 <th>Project Title</th>
-                                <th>Project Description</th>
+                                <!-- <th>Project Description</th> -->
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
@@ -48,13 +48,15 @@
                                 <td>{{$key+1}}</td>
                                 <td>{{$project->projectCategory->title}}</td>
                                 <td>{{ $project->title }}</td>
-                                <td>{!! $project->description !!}</td>
+                                <!-- <td>{!! $project->description !!}</td> -->
                                 <td>{!! $project->publish?'<span
                                         class="badge badge-pill badge-success">Active</span>':'<span
                                         class="badge badge-pill badge-warning">Inactive</span>' !!}</td>
                                 <td>
                                     <button class="btn btn-xs btn-info"
                                     onclick="window.location=`{{ route('project.edit',['id'=>$project->id]) }}`">Edit</button>
+                                    <button class="btn btn-xs btn-success"
+                                    onclick="window.location=`{{ route('projectpartner.create',['id'=>$project->id]) }}`">Add Partners</button>
                                     <button data-question="Are you sure to delete the data?" data-toggle="confirm" data-id="{{ $project->id }}" class="btn btn-xs btn-danger">Delete</button>
                                 </td>
                             </tr>

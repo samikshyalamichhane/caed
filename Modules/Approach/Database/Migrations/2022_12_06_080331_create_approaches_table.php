@@ -20,6 +20,7 @@ class CreateApproachesTable extends Migration
             $table->text('description')->nullable();
             $table->string('icon')->nullable();
             $table->string('image')->nullable();
+            $table->string('category')->nullable();
             $table->boolean('publish')->default(1);
 
             $table->timestamps();

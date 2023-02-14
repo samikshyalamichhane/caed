@@ -30,5 +30,8 @@
     "ProjectReport": true,
     "Vacancy": true,
     "Resources": true,
-    "Pages": true
+    "Pages": true,
+    "Model": true,
+    "ProjectPartner": true,
+    "DevelopmentProjectM": true
 }

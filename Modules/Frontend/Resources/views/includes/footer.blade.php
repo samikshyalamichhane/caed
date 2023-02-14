@@ -54,10 +54,10 @@
                             </div>
                             <div class="special-menu">
                                 <ul>
-                                    <li><a href="{{route('about')}}">Who We Are</a></li>
-                                    <li><a href="{{route('about')}}">Organizational Structure</a></li>
-                                    <li><a href="{{route('about')}}">Approach & Strategies</a></li>
-                                    <li><a href="{{route('about')}}">Our Team</a></li>
+                                    <li><a href="{{route('whoWeAre')}}">Who We Are</a></li>
+                                    <li><a href="{{route('organizationalStructure')}}">Organizational Structure</a></li>
+                                    <li><a href="{{route('approachesAndStrategy')}}">Approach & Strategies</a></li>
+                                    <li><a href="{{route('ourTeams')}}">Our Team</a></li>
                                     <!--<li><a href="team.html">Team</a></li>                                  -->
                                     <!--<li><a href="contact.html">Contact Us</a></li>                                    -->
                                 </ul>

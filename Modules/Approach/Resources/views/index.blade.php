@@ -31,7 +31,7 @@
                         <thead>
                             <tr>
                                 <th>Title</th>
-                                <th>Description</th>
+                                <th>Type</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
@@ -40,7 +40,7 @@
                             @forelse ($approaches as $key=>$approach)
                             <tr data-id="{{$approach->id}}">
                                 <td>{{ $approach->title }}</td>
-                                <td>{!! $approach->description !!}</td>
+                                <td>{{ ucfirst($approach->category) }}</td>
                                 <td>{!! $approach->publish?'<span
                                         class="badge badge-pill badge-success">Active</span>':'<span
                                         class="badge badge-pill badge-warning">Inactive</span>' !!}</td>

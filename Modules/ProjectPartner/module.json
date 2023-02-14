@@ -1,0 +1,13 @@
+{
+    "name": "ProjectPartner",
+    "alias": "projectpartner",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ProjectPartner\\Providers\\ProjectPartnerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

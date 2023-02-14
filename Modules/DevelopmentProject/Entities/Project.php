@@ -30,4 +30,9 @@ class Project extends Model
     public function projectCategory(){
         return $this->belongsTo('Modules\DevelopmentProject\Entities\ProjectCategory','projectCategory_id');
     }
+
+    public function projectPartners(){
+        return $this->hasMany('Modules\DevelopmentProject\Entities\ProjectPartner','project_id');
+
+    }
 }

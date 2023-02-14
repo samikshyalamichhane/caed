@@ -28,6 +28,16 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
+                                    <label for="category">Select Category</label>
+                                    <select class="form-control form-control-sm" id="category" name="category">
+                                        <option value="">Select Category</option>
+                                        <option value="approaches">Approaches</option>
+                                        <option value="strategies">Strategies</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
                                     <label for="icon">Icon</label>
                                     <input name="icon" class="form-control" value="{{ old('icon') }}">
                                 </div>
