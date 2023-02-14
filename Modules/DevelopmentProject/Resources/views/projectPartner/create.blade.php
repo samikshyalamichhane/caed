@@ -93,7 +93,6 @@
     </div>
 </div>
 @endsection
-@push('page_scripts')
 <script>
     function preview() {
         frame.src = URL.createObjectURL(event.target.files[0]);
@@ -134,7 +133,7 @@
         background-color: whitesmoke;
     }
 </style>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js"></script>
 <script>
     $(function(){
         $('[data-toggle="confirm"]').jConfirm().on('confirm', function(e){
@@ -170,4 +169,3 @@
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-@endpush
