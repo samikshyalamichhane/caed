@@ -9338,6 +9338,29 @@ object-fit: cover;
     display:block;
     font-size:18px;
 }
+.newfafa .accordion .card-header:after {
+    font-family: "Font Awesome 5 Pro";  
+    content: "\f068";
+    float: right; 
+    font-weight:600;
+    cursor:pointer;
+}
+.newfafa .accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+.newfafa h3{
+    margin-bottom:20px;
+}
+.newfafa .card-header{
+    background:#2e813f;
+    color:#fff;
+    border-bottom:1px solid #fff;
+    margin-bottom:0!important;
+}
+.newfafa .card-body{
+    border-bottom:1px solid #ccc;
+}
 /* ============== Responsive Page Css starts ============== --*/
 @media (max-width: 767px) {
     .headerkologo .img{

@@ -164,7 +164,7 @@
                         </div>
                         <div class="heading">
                             <h3>{{$approach->title}}</h3>
-                            <p>{!! Illuminate\Support\Str::limit($approach->description, 50) !!}</p>
+                            <p>{!! Illuminate\Support\Str::limit($approach->description, 30) !!}</p>
                         </div>
                     </div>
                     @endif
@@ -183,7 +183,7 @@
                         </div>
                         <div class="heading">
                             <h3>{{$approach->title}}</h3>
-                            <p>{!! Illuminate\Support\Str::limit($approach->description, 50) !!}</p>
+                            <p>{!! Illuminate\Support\Str::limit($approach->description, 30) !!}</p>
                         </div>
                     </div>
                     @endif
